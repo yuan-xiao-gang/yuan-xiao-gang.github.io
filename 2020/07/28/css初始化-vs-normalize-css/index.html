@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+
+
+
+    <meta name="keywords" content=""/>
+
+
+
+    <meta name="description" content="css 初始化将浏览器的默认样式进行统一的管理，抹平浏览器不同导致的展示不同；
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354body, h1..."/>
+
+
+<meta name="Robots" content="all">
+
+
+    <title>Hexo | css初始化 vs normalize.css</title>
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/css/atom-one-dark.css">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+    <div class="main-container">
+        <header class="header">
+    <div class="global-width">
+        <nav class="nav-box">
+            
+                <a class="nav-item" href="/"
+                
+                >Home</a>
+            
+                <a class="nav-item" href="/resume"
+                
+                >Resume</a>
+            
+                <a class="nav-item" href="/mood"
+                
+                   target="_blank"
+                
+                >Mood</a>
+            
+                <a class="nav-item" href="/amusement/tetris"
+                
+                   target="_blank"
+                
+                >Amusement</a>
+            
+                <a class="nav-item" href="/about"
+                
+                >About</a>
+            
+        </nav>
+    </div>
+</header>
+
+        <section class="content global-width">
+            <div class="main">
+                <article class="box post">
+    <div class="post-title align-center detail-title">css初始化 vs normalize.css</div>
+    <div class="post-meta align-center">
+        
+        <i class="fa fa-calendar"></i> <time>2020-07-28</time>
+        <span class="dotted">|</span>
+        <i class="fa fa-user"></i> 
+        
+    </div>
+
+    <div class="post-content">
+        <h1 id="css-初始化"><a href="#css-初始化" class="headerlink" title="css 初始化"></a>css 初始化</h1><p>将浏览器的默认样式进行统一的管理，抹平浏览器不同导致的展示不同；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td &#123;</span><br><span class="line">    margin: 0;</span><br><span class="line">    padding: 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">body, button, input, select, textarea &#123;</span><br><span class="line">    font: 14px&#x2F;1.5 tahoma, arial, \5b8b\4f53;</span><br><span class="line">    outline: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">h1, h2, h3, h4, h5, h6 &#123;</span><br><span class="line">    font-size: 100%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">address, cite, dfn, em, var &#123;</span><br><span class="line">    font-style: normal;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">code, kbd, pre, samp &#123;</span><br><span class="line">    font-family: couriernew, courier, monospace;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ul, ol &#123;</span><br><span class="line">    list-style: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a &#123;</span><br><span class="line">    text-decoration: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a:hover &#123;</span><br><span class="line">    text-decoration: underline;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sup &#123;</span><br><span class="line">    vertical-align: text-top;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sub &#123;</span><br><span class="line">    vertical-align: text-bottom;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">legend &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fieldset, img &#123;</span><br><span class="line">    border: 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">button, input, select, textarea &#123;</span><br><span class="line">    font-size: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="normalize-css"><a href="#normalize-css" class="headerlink" title="normalize.css"></a>normalize.css</h1><p>它也是css reset的一种替代方案；<br>优点：<br>    - 保护有用的浏览器默认样式<br>    - 修复浏览器自身的bug<br>    - 优化css可用性</p>
+<p>官网地址： <a href="http://necolas.github.io/normalize.css/" target="_blank" rel="noopener">官网</a></p>
+<p>使用方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install normalize.css</span><br><span class="line"></span><br><span class="line">&#96;</span><br></pre></td></tr></table></figure>
+
+    </div>
+</article>
+            </div>
+            <div class="aside">
+    
+        <div class="box widget">
+    <div class="introduction">
+        <p><img src="/images/avatar.jpg" alt="head-sculpture" /></p>
+        <p class="name">
+            博落回
+        </p>
+        <p class="slogan">流连矣 忘景幻云催 峦栈醺醺说旧梦 重山迟迟映霞辉 向晚共邀归 —— 忆江南</p>
+    </div>
+</div>
+    
+        
+<div class="box widget">
+    <div class="title">Recent</div>
+    <ul class="item-box">
+        
+            
+                <li><a href="/2020/07/28/css%E5%88%9D%E5%A7%8B%E5%8C%96-vs-normalize-css/">css初始化 vs normalize.css</a></li>
+            
+        
+            
+                <li><a href="/2020/07/28/hello-world/">Hello World</a></li>
+            
+        
+    </ul>
+</div>
+
+    
+        
+    
+        
+  <div class="box widget">
+    <div class="title">Archives</div>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">2020-07</a><span class="archive-list-count">2</span></li></ul>
+  </div>
+
+    
+        
+    
+</div>
+        </section>
+        <footer class="footer">
+    <div class="global-width footer-box">
+        <div class="copyright">
+            <span>Copyright &copy; 2019</span>
+            <span class="dotted">|</span>
+            <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></span>
+            <span class="dotted">|</span>
+            <span>Theme by <a href="javascript:">Loren</a></span>
+            <span class="dotted">|</span>
+            <span><a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">浙ICP备18016660号-1</a></span>
+        </div>
+    </div>
+</footer>
+    </div>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
